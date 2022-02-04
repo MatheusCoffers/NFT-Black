@@ -1,0 +1,538 @@
+/*configurações padrões da página*/
+
+:root{
+    font-family: 'Raleway';
+    font-size: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+
+}
+
+section{
+    width: 100%;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #1E1E1E;
+    padding: 0 5vw;
+    margin-bottom: 100px;
+}
+
+/*estilização navbar*/
+
+header{
+    width: 100%;
+}
+
+.navbar{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+/*navbar logo_e_busca*/
+
+.logo_e_busca{
+    display: flex;
+    width: 45vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.logo span{
+    color: #C500E5;
+}
+
+.busca input{
+    width: clamp(30rem,25vw,60rem);
+    height: 4rem;
+    border-radius: 10px;
+    background: #595959;
+    border: none;
+    padding-top: 4px;
+    padding-left: 15px;
+    font-size: 2rem;
+}
+
+.busca input::placeholder{
+    font-size: 2rem;
+    align-items: center;
+    color: rgb(214, 214, 214);
+}
+
+/*navbar menu*/
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 2.4rem;
+    margin: 0 20px;
+}
+
+.menu a:hover{
+    border-bottom: #C500E5 2px solid;
+}
+
+.menu a.botao{
+    background: #C500E5;
+    padding: 7px 20px;
+    border-radius: 10px;
+}
+
+
+/*responsividade da navbar*/
+@media (max-width: 1100px){
+    .navbar{
+        justify-content: center;
+        margin-bottom: 90px;
+    }
+
+    .logo_e_busca{
+        width: clamp(500px,50vw,700px);
+        margin-bottom: 10px;
+    }
+
+    .logo{
+        margin-left: 10px;
+        font-size: clamp(2.5rem,4vw,5rem);
+    }
+}
+
+/*estilização da section1*/
+
+.section1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+@media (max-width: 1150px){
+    .section1{
+        justify-content: center;
+    }
+
+    .section1_text{
+        margin-bottom: 60px;
+    }
+}
+
+/*estilização do texto da section1*/
+.section1_text{
+    width: clamp(50rem,45vw,80rem);
+}
+
+.section1_text>h1{
+    font-size: clamp(4.5rem,4.5vw,10rem);
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+.section1_botao a{
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 14px 25px;
+    margin-right: 20px;
+    background-color: #595959;
+    border-radius: 7px;
+}
+
+.section1_botao a:hover{
+    background-color: #C500E5;
+}
+
+.section1_numeros{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.numero h1{
+    font-size: clamp(6rem,7vw,10rem);
+    font-weight: 800;
+}
+
+.numero p{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 800;
+    color: #595959;
+}
+
+/*personalização da imagem da section1*/
+
+.section1_img{
+    width: 45rem;
+}
+
+.section1_img img{
+    width: 35rem;
+    border-top-left-radius: 150px;
+}
+
+/*personalização card do perfil*/
+
+.perfil{
+    background-color: rgba(89, 89, 89, 0.43);;
+    padding: 20px;
+}
+
+#baner_perfil{
+    position: relative;
+    top: -200px;
+    right: -110px;
+    width: 30rem;
+    background: rgba(89, 89, 89, 0.43);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+
+
+.perfil h1{
+    font-size: 3rem;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.perfil_info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.perfil_info img{
+    width: 5rem;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.perfil_info p{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #00FFFF;
+}
+
+.perfil>p{
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.perfil_preco{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.perfil_preco h1{
+    font-size: 3.5rem;
+}
+
+.perfil_preco a{
+    font-size: 2rem;
+    text-decoration: none;
+    background-color: #C500E5;
+    padding: 7px 20px;
+    border-radius: 5px;
+}
+
+@media (max-width: 1150){
+
+}
+
+/*estilização da section2*/
+
+/*estilização do header da section 2*/
+
+
+
+.section{
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+.section_header{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.section_header h1{
+    font-size: clamp(7rem, 6.5vw, 10rem);
+}
+
+.section_header a{
+    text-decoration: none;
+    font-size: 4rem;
+    margin: 0 20px;
+}
+
+.section_header a:hover{
+    color: #C500E5;
+}
+
+@media (max-width:1150px){
+    
+    .section_header{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/*estilização dos cards de nft*/
+
+.NFT_cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.NFT_cards .perfil{
+    margin-top: -2px;
+}
+
+@media (max-width: 1200px){
+    .NFT_cards{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card{
+        margin: 20px;
+    }
+}
+
+.card{
+    width: 35rem;
+}
+
+.card>img{
+    width: 100%;
+    height: 35rem;
+    object-fit: cover;
+}
+
+/*personalização da section3*/
+
+.section3 .card>img{
+    height: 25rem;
+}
+
+/*personalização dos cards da section3*/
+
+div.info_artista{
+    margin-top: -2px;
+    background-color: rgba(89, 89, 89, 0.43);
+    padding: 40px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.foto_info_artista{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: -100px;
+}
+
+.foto_info_artista img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.foto_info_artista h1{
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.numeros_info_artista{
+    margin-top: -60px;
+    display: flex;
+    justify-content:space-between ;
+    margin-bottom: 70px;
+}
+
+.numeros_info_artista>div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+   
+.numeros_info_artista h1{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.numeros_info_artista p{
+    font-size: 2rem;
+    color: #9C9C9C;
+}
+
+.info_artista a{
+    background-color: #C500E5;
+    text-align: center;
+    padding: 7px 0;
+    width: 160px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 2.5rem;
+    margin: 0 auto;
+}
+
+/*estilização da section4*/
+
+.section4{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+/*estilização da imagem*/
+
+.section4_image {
+    width: 35vw;
+
+    min-width: 400px;
+}
+
+.section4_image img{
+    width: 100%;
+}
+
+/*estilizção do texto da section3*/
+
+.section4_text{
+    padding-top: 40px;
+    width: 50vw;
+    min-width: 500px;
+}
+
+.section4_text h1{
+    font-size: clamp(3.8rem,3.5vw,6rem);
+    margin-bottom: 20px;
+}
+
+.section4_text p{
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.section4_text_buttons a{
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 14px 25px;
+    margin-right: 20px;
+    background-color: #595959;
+    border-radius: 7px;
+}
+
+.section4_text_buttons a:hover{
+    background-color: #C500E5;
+}
+
+.linha{
+    width: 4px;
+    margin: 0 auto;
+    height: 150px;
+    background: linear-gradient(180deg, #C500E6 0%, rgba(196, 196, 196, 0) 100%);
+    margin-bottom: 100px;
+}
+
+/*responsividade da section4*/
+
+@media (max-width:1055px){
+    .section4{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .section4_image, .section4_text{
+        margin: 0 auto;
+    }
+}
+
+/*estilização da secion 5*/
+
+.section5{
+    width: 100%;
+}
+
+/*estilização do titulo da section5*/
+
+.section5_titulo{
+    margin-bottom: 60px;
+}
+
+.section5_titulo h1{
+    margin: 0 auto;
+    text-align: center;
+    font-size: clamp(4rem,4vw,5rem);
+}
+
+/*esttilização do formulário da section 5*/
+
+.section5_form{
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.section5_form input[type="email"]{
+    width: calc(100% - 240px);
+    height: 50px;
+    outline: none;
+    font-size: 2rem;
+    background-color: #595959;
+    border: none;
+    padding: 5px 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.section5_form input[type="email"]::placeholder{
+    font-family: 'Raleway';
+    color: white;
+}
+
+.section5_form input[type="button"]{
+    width: 180px;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 2rem;
+    background-color: #C500E5;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
