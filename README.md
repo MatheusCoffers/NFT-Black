@@ -1,7 +1,7 @@
 # NFT Black
 
 ### Desafio:
-Esse projeto é um desafio da Blackcode
+Esse projeto é um desafio da Blackcode (@BLACKCODE)
 
 instagram deles: https://www.instagram.com/blaackcode/
 repositório do desafio: https://github.com/Blaack-Code/NFT-Marketplace
@@ -19,4 +19,4 @@ nesse projeto eu consegui aplicar fundamentos de media query, pseudoclasses, use
 
 ### considerações finais:
 - há uma imagem jpg que é o design, no diretório principal
-- visualizar projeto: https://matheuscoffers.github.io/wikiLove
+- visualizar projeto: https://matheuscoffers.github.io/NFT-Black/
