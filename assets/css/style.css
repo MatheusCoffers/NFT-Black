@@ -536,3 +536,24 @@ div.info_artista{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
+@media(max-width: 792px){
+
+    .section5_form{
+        flex-direction: column;
+    }
+
+    .section5_form input[type="email"]{
+        width: 400px;
+        border-radius: 10px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .section5_form input[type="button"]{
+        width: 440px;
+        border-radius: 10px;
+        margin: 0 auto;
+        height: 60px;
+    }
+}
